@@ -93,7 +93,7 @@ int test_read_before_mount() {
 
   uint8_t buf[SIZE];
   if (mdadm_read(0, SIZE, buf) != -3) {
-    printf("failed: read should fail on an umounted system but it did not.\n");
+    printf("failed: read should fail on an umounted system but it did not.\n"); // done
     return 0;
   }
 
